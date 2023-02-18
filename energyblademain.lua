@@ -15,43 +15,11 @@ end
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-	Title = " Untitled Roblox Utility",
+	Title = " EnergyBlade",
 	Style = 4,
 	SizeX = 550,
 	SizeY = 400,
 	Theme = "Dark",
-	ColorOverrides = {
-        MainFrame = Color3.fromRGB(30,30,30),
-		Minimise = Color3.fromRGB(255,25,25),
-		MinimiseAccent = Color3.fromRGB(147,59,0),
-		Maximise = Color3.fromRGB(25,255,0),
-		MaximiseAccent = Color3.fromRGB(0,255,110),
-		NavBar = Color3.fromRGB(255,255,255),
-		NavBarAccent = Color3.fromRGB(40,40,40),
-		NavBarInvert = Color3.fromRGB(0,0,0),
-		TitleBar = Color3.fromRGB(55,55,55),
-		TitleBarAccent = Color3.fromRGB(255,255,255),
-		Overlay = Color3.fromRGB(175,175,175),
-		Banner = Color3.fromRGB(55,55,55),
-		BannerAccent = Color3.fromRGB(255,255,255),
-		Content = Color3.fromRGB(85,85,85),
-		Button = Color3.fromRGB(85,85,85),
-		ButtonAccent = Color3.fromRGB(255,255,255),
-		ChipSet = Color3.fromRGB(235,235,235),
-		ChipSetAccent = Color3.fromRGB(85,85,85),
-		DataTable = Color3.fromRGB(235,235,235),
-		DataTableAccent = Color3.fromRGB(85,85,85),
-		Slider = Color3.fromRGB(85,85,85),
-		SliderAccent = Color3.fromRGB(235,235,235),
-		Toggle = Color3.fromRGB(205,205,205),
-		ToggleAccent = Color3.fromRGB(125,125,125),
-		Dropdown = Color3.fromRGB(85,85,85),
-		DropdownAccent = Color3.fromRGB(235,235,235),
-		ColorPicker = Color3.fromRGB(85,85,85),
-		ColorPickerAccent = Color3.fromRGB(235,235,235),
-		TextField = Color3.fromRGB(175,175,175),
-		TextFieldAccent = Color3.fromRGB(255,255,255),
-    },
 })
 
 local Y = X.New({
@@ -69,7 +37,7 @@ local B = Y.Toggle({
 ]]
 
 local A = Y.Button({
-	Text = "URU is in beta, so expect bugs.",
+	Text = "EnergyBlade is in beta, so expect bugs.",
 })
 local H = Y.TextField({
 	Text = "Value",
