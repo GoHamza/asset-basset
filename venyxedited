@@ -449,11 +449,9 @@ do
 			utility:Tween(container, {
 				Size = UDim2.new(0, 511, 0, 428),
 				Position = self.position
-			}, 0.2)
-			wait(0.2)
-			
-			utility:Tween(topbar, {Size = UDim2.new(1, 0, 0, 38)}, 0.2)
-			wait(0.2)
+			}, 0.06)
+			utility:Tween(topbar, {Size = UDim2.new(1, 0, 0, 38)}, 0.1)
+			wait(0.1)
 			
 			container.ClipsDescendants = false
 			self.position = nil
@@ -461,14 +459,13 @@ do
 			self.position = container.Position
 			container.ClipsDescendants = true
 			
-			utility:Tween(topbar, {Size = UDim2.new(1, 0, 1, 0)}, 0.2)
-			wait(0.2)
+			utility:Tween(topbar, {Size = UDim2.new(1, 0, 1, 0)}, 0.06)
 			
 			utility:Tween(container, {
 				Size = UDim2.new(0, 511, 0, 0),
 				Position = self.position + UDim2.new(0, 0, 0, 428)
-			}, 0.2)
-			wait(0.2)
+			}, 0.1)
+			wait(0.1)
 		end
 		
 		self.toggling = false
@@ -573,14 +570,14 @@ do
 		notification.Position = library.lastNotification or UDim2.new(0, padding, 1, -(notification.AbsoluteSize.Y + padding))
 		notification.Size = UDim2.new(0, 0, 0, 60)
 		
-		utility:Tween(notification, {Size = UDim2.new(0, textSize.X + 70, 0, 60)}, 0.2)
+		utility:Tween(notification, {Size = UDim2.new(0, textSize.X + 70, 0, 60)}, 0.1)
 		wait(0.2)
 		
 		notification.ClipsDescendants = false
 		utility:Tween(notification.Flash, {
 			Size = UDim2.new(0, 0, 0, 60),
 			Position = UDim2.new(1, 0, 0, 0)
-		}, 0.2)
+		}, 0.1)
 		
 		-- callbacks
 		local active = true
@@ -595,15 +592,15 @@ do
 			
 			library.lastNotification = notification.Position
 			notification.Flash.Position = UDim2.new(0, 0, 0, 0)
-			utility:Tween(notification.Flash, {Size = UDim2.new(1, 0, 1, 0)}, 0.2)
+			utility:Tween(notification.Flash, {Size = UDim2.new(1, 0, 1, 0)}, 0.1)
 			
-			wait(0.2)
+			wait(0.1)
 			utility:Tween(notification, {
 				Size = UDim2.new(0, 0, 0, 60),
 				Position = notification.Position + UDim2.new(0, textSize.X + 70, 0, 0)
-			}, 0.2)
+			}, 0.1)
 			
-			wait(0.2)
+			wait(0.1)
 			notification:Destroy()
 		end
 		
